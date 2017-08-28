@@ -1,0 +1,272 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 0, 1);
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    box-shadow: 15px 5px 10px 0px rgba(97, 138, 191, 0.5);
+    margin-bottom: 20px;
+}
+
+header img {
+    display: block;
+    height: 40px;
+    padding-top: 50px;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+    min-width: 200px;
+    background-color: aquamarine;
+    border-style: solid;
+    border-color: blue;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    background-color: teal;
+}
+
+figure {
+    margin: 0 auto;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px 30px 10px;
+    width: 60%;
+}
+
+figcaption {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 550%;
+    flex: auto;
+    font-family: 'Oleo Script', cursive;
+}
+
+h2,
+h3 {
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    color: darkred;
+}
+
+article {
+    background-color: coral;
+    margin-bottom: 2cm;
+}
+
+video {
+    width: 70%;
+    height: 60%;
+    display: block;
+    margin: 0 auto;
+    align-content: center;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 10px 20% 20px 20%;
+}
+
+span {
+    padding: 10px 40px;
+    background-color: lawngreen;
+    border: 2px solid red;
+}
+
+#cuadro-linear-gradi {
+    padding: 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1));
+}
+
+footer {
+    padding: 10px 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+}
+
+.first {
+    font font-weight: bold;
+}
+
+.done {
+    text-decoration: line-through;
+    color: darkred;
+}
+
+.base-box {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    padding: 3px 3px 3px 7px;
+    margin: 0px 50px;
+}
+
+.important {
+    font-weight: bold;
+}
+
+.editor-note {
+    background-color: #9999ff;
+    border-left: 6px solid #333399;
+    margin: 10px 100px;
+}
+
+.warning {
+    background-color: #ff9999;
+    border-left: 6px solid #993333;
+    margin: 10px 100px;
+}
+
+section p {
+    color: blue;
+}
+
+section>p {
+    background-color: yellow;
+}
+
+h2+p {
+    text-transform: uppercase;
+}
+
+h2~p {
+    border: 1px dashed black;
+}
+
+h4 {
+    margin: 10px 20px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    display: inline;
+    font-family: 'Quicksand', sans-serif;
+}
+h4:hover{
+    background-color: red;
+}
+.ul-zerbra > li:nth-of-type(even) {
+    text-align: left;
+    color: red;
+    background-color: black;
+}
+.ul-zerbra > li:nth-of-type(odd) { 
+    text-align: left;
+    font-size: 30px;
+    color: palevioletred;
+    background-color: white;
+}
+.ul-zerbra > li:hover{
+    color: green;
+}
+.ul-zerbra li:nth-last-of-type(2n) > a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;    
+}
+.ul-zerbra li:nth-last-of-type(2n+1) > a{
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+.ul-zerbra:hover{
+    color: green;
+}
+ul > a:hover{
+    color: red;
+}
+.pseudoelemet >p::first-letter{
+    font-size: 3em;
+    font-weight: bold;
+    color: orangered;
+    background-color: yellow;
+    font-family: 'Pacifico', cursive;
+}
+.pseudoelemet >p::first-line{
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+}
+.with-currency{
+    margin: 0 auto;
+    border-style: solid;
+    border-color: blueviolet;    
+    border-spacing: 0;    
+}
+.with-currency td{
+  border : 1px solid black;
+  padding: 6px 8px;
+}
+/* All <td>s preceded by another <td>, within a <tbody>, within a <table> */
+.with-currency tbody td + td {
+  text-align: center;
+}
+/* All <td>s that are a last child, within a <tbody>, within a <table> */
+.with-currency tbody td:last-child{
+    text-align: right;
+}
+/* All pseudo-elements "before" <td>s that are a last child,
+   appearing within elements with a class of "with-currency" */
+.with-currency td:last-child::before {
+  content: '$';
+}
+.with-currency thead{
+    color: white;
+    background-color: black;
+    font-family: 'Abril Fatface', cursive;
+}
+span{
+    font-size: 1em;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.p-animated {
+  color: red;
+  width: 100px;
+  font-size: 10px;
+  transform-origin: center;
+}
+
+.p-animated:hover {
+  animation-name: rotate;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
